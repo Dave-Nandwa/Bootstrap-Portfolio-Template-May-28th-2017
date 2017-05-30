@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hire me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Arvo|Gloria%20Hallelujah|Cookie|Raleway' rel='stylesheet' type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="css/main.css" rel="stylesheet" type="text/css">
+   <link href="css/hire.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="images/birds.jpg">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- loader starts -->
+<div class="loader"></div>
+<style>
+  .loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('http://uploads.webflow.com/56dfccba3d760e08049f42a9/56dfccba3d760e08049f4300_infinite-gif-preloader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
+
+
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">D.N</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html#contact">CONTACT</a></li>
+                <li><a href="hire.html">Hire me</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+          
+        
+    <!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid hire">
+    <form>
+  <h3 class="text-center">I'd Love to work with you.</h3>
+  <p class="text-center"><em>Just fill in the below form, and I'll get back to you in 3 working days.</em></p>
+        <br/>
+  <div class="row">
+    <div class="col-md-4">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Nairobi Kenya</p>
+      <p><i class="fa fa-mobile" aria-hidden="true"></i> Phone: +254 1534564</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+          
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+          
+        
+          
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+          
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="job-n" name="job-title" placeholder="Project Title" type="text" required>
+        </div>
+          
+        
+        <div class="col-sm-6 form-group">
+        <select name="packages" class="form-control">
+          <option value="volvo">Package</option>
+          <option value="saab">Basic</option>
+          <option value="mercedes">Pro</option>
+          <option value="audi">Premium</option>
+        </select>
+          </div>
+          
+          
+      </div>
+      <textarea class="form-control" id="job-desc" name="job-desc" placeholder="Project Description" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+    </form>
+  <br>
+
+</div>
+    
+    <style>
+        .hire-f {
+            margin-top: 5%
+        }
+    </style>
+    
+     <!-- Sidenav styles and scripts -->
+    
+    <style>
+        
+        .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+    opacity: 0.9;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+    
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+    
+    <!-- Sidenav styles and scripts ends -->
+
+    
+</body>
+</html>

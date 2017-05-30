@@ -64,15 +64,15 @@ $(document).ready(function(){
                 <li><a href="#myPage">HOME</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#contact">Hire me</a></li>
+                <li><a href="hire.html">Hire me</a></li>
             </ul>
             </div>
         </div>
         </nav>
         
-         <div class="bg">
+         <div class="bg" style="background-image: url('images/mac.jpg');">
              <div class="hero-text">
                 <h1 style="font-size:50px" class="iam"></h1>
                  <script src="typed/js/typed.js" type="text/javascript"></script>
@@ -110,7 +110,7 @@ $(document).ready(function(){
                     My name is David Nandwa and I'm a Full Stack Web Developer.
                     I have been making stuff on the web for about 2 years now, and I fall in love with it every single day.<br/>Apart from Web Dev', I also make cool 2d games as well as Ionic Applications.<br/>I am intensely passionate about playing Football and Computer Science.<br/>And I also take pictures from time to time, like the one on the right.</p>
             </section>
-            <img src="birds.jpg"/>
+            <img src="images/birds.jpg"/>
         </div>
         
         
@@ -146,16 +146,17 @@ $(window).scroll(function(){
     windowheight = $(window).height();
     scrollpostop = $(window).scrollTop();
     scroolposbottom = windowheight + scrollpostop; 
-    $('.skills').revealonscroll();
+    $('#skills').revealonscroll();
 });
         </script>
         
         
-        <span id="skills"></span>
-        
+       
+       
+
         <div class="container-fluid skills">
-            
-            <center><h1>What I have to offer</h1></center>
+             <span id="skills"></span>
+         <center><h1>.</h1></center>
             <br/>
             
             
@@ -189,18 +190,13 @@ $(window).scroll(function(){
 	<div class="skill-bar-percent">65%</div>
 </div> <!-- End Skill Bar -->
 
-<div class="skillbar clearfix " data-percent="40%">
-	<div class="skillbar-title" style="background: #27ae60;"><span>SEO</span></div>
-	<div class="skillbar-bar" style="background: #2ecc71;"></div>
-	<div class="skill-bar-percent">40%</div>
-</div> <!-- End Skill Bar -->
 
 <div class="skillbar clearfix " data-percent="70%">
 	<div class="skillbar-title" style="background: #F39C12;"><span>Git</span></div>
 	<div class="skillbar-bar" style="background: #F39C12;"></div>
 	<div class="skill-bar-percent">70%</div>
 </div>
-
+ 
 <div class="skillbar clearfix " data-percent="90%">
 	<div class="skillbar-title" style="background: #2C3E50;"><span>Python</span></div>
 	<div class="skillbar-bar" style="background: #2C3E50;"></div>
@@ -227,68 +223,14 @@ $(window).scroll(function(){
             <!-- End Skill Bar -->
         
 </div>
+       
         
-        
-        
-
-<div class="container-fluid portfolio" id="portfolio">   
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Some of my projects.</h1>
-      <ul>
-        <li><a href="#portfolio" class="filter-all">All</a></li>
-        <li><a href="#portfolio" class="filter-tech">Websites</a></li>
-        <li><a href="#portfolio" class="filter-ionic">Ionic Apps</a></li>
-        <li><a href="#portfolio" class="filter-nature">Phaser Games</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 filter-gallery">
-      <img src="https://placeimg.com/250/200/tech" class="tech all">
-      <img src="http://1.bp.blogspot.com/-hBLdX3F5nZg/VoRlCgkpfVI/AAAAAAAAI1E/rSjbt9_JGvQ/w1200-h630-p-k-no-nu/Logo%2BIonic.png" class="ionic all">
-      <img src="https://placeimg.com/250/200/nature" class="nature all">
-      <img src="https://placeimg.com/250/200/tech" class="tech all">
-      <img src="http://1.bp.blogspot.com/-hBLdX3F5nZg/VoRlCgkpfVI/AAAAAAAAI1E/rSjbt9_JGvQ/w1200-h630-p-k-no-nu/Logo%2BIonic.png" class="ionic all">
-      <img src="https://placeimg.com/250/200/nature" class="nature all">
-    </div>
-  </div>
-</div>
-</div> 
-<script type="text/javascript">
-    //Work in Progress
-
-$(document).ready(function(){
-    $(".filter-tech").click(function(){
-        $(".ionic, .nature").fadeOut(200);
-        $(".tech").fadeIn(200);
-    });
-    $(".filter-ionic").click(function(){
-        $(".tech, .nature").fadeOut(200);
-        $(".ionic").fadeIn(200);
-    });
-    $(".filter-nature").click(function(){
-        $(".tech, .ionic").fadeOut(200);
-        $(".nature").fadeIn(200);
-    });
-    $(".filter-all").click(function(){
-        $(".tech, .ionic, .nature").fadeIn(200);
-    });
-});
-</script>
-     
-<!-- potfolio section ends -->
-
         
 
 <!-- Container (Contact Section) -->
 <div class="container-fluid contact" id="contact">
-  <h3 class="text-center">Let's get in touch.</h3>
-  <p class="text-center"><em>I love mail.</em></p>
+  <h2 class="text-center">Let's get in touch.</h2>
+ <br/>
 
   <div class="row">
     <div class="col-md-4">
@@ -306,7 +248,7 @@ $(document).ready(function(){
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="comments" placeholder="What's on your mind?" rows="5"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
